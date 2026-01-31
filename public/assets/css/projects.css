@@ -1,0 +1,134 @@
+.projects-section {
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.projects-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.project-content {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+}
+
+.project-content.active {
+  display: block;
+   opacity: 1;
+  visibility: visible;
+  height: auto;
+}
+
+.project-card {
+  background: var(--card-bg);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: 0.4s ease;
+  text-align: center;
+   max-width: 360px;
+  margin: 0 auto;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-image img {
+  width: 100%;
+  height: 250x;
+  object-fit: contain;
+}
+
+
+.project-content-text {
+  padding: 25px 20px;
+}
+
+.project-content-text h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.project-content-text p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin: 10px 0;
+}
+
+.project-tag {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.project-prev,
+.project-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  z-index: 10;
+  backdrop-filter: blur(6px);
+}
+
+.project-prev:hover,
+.project-next:hover {
+  background: var(--primary-color);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.project-prev { left: 12px; }
+.project-next { right: 12px; }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .project-prev,
+  .project-next {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+}
+
+
+.project-progress {
+  width: 120px;
+  height: 4px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  margin: 25px auto 0;
+  overflow: hidden;
+}
+
+.project-progress span {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--primary-color);
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+
+

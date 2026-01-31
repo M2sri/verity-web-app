@@ -1,0 +1,134 @@
+/* ====================================================
+   RESPONSIVE DESIGN (CLEAN VERSION)
+==================================================== */
+
+/* ================= TABLET & BELOW ================= */
+@media (max-width: 1024px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid,
+    .about-grid,
+    .pricing-grid,
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+
+    .footer-row {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-brand {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-info,
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    /* Header & Navigation */
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--card-bg);
+        box-shadow: var(--shadow);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+    }
+
+    nav.active {
+    max-height: 100vh;
+}
+
+
+    nav ul {
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Layout */
+    .single-column {
+        padding: 50px 0;
+        gap: 30px;
+    }
+
+    .section {
+        margin-bottom: 40px;
+    }
+
+    /* Contact */
+    .contact-wrapper,
+    .calculator-box {
+        padding: 25px;
+    }
+
+    .contact-grid {
+        gap: 25px;
+    }
+
+    /* Forms & Buttons */
+    .radio-list,
+    .button-group,
+    .feature-buttons,
+    .pricing-grid,
+    .details-list {
+        grid-template-columns: 1fr;
+    }
+
+    /* ================= TEAM SWIPER (MOBILE FIX) ================= */
+
+    .team-swiper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .team-card {
+        margin: 0 auto;
+    }
+}
+

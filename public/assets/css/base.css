@@ -1,0 +1,83 @@
+/* ====================================================
+   THEME VARIABLES – LIGHT MODE
+==================================================== */
+:root {
+    --primary-color: #3498db;
+    --primary-hover-color: #2980b9;
+    --secondary-color: #2c3e50;
+
+    --bg-color: #ffffff;
+    --bg-secondary: #f9f9f9;
+    --card-bg: #ffffff;
+
+    --text-color: #333333;
+    --text-secondary: #555555;
+
+    --border-color: #e0e0e0;
+
+    --footer-bg: #0b1220;
+
+    --hero-gradient: linear-gradient(135deg, #3498db, #2c3e50);
+
+    --shadow: 0 5px 15px rgba(0,0,0,0.05);
+    --shadow-hover: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* ====================================================
+   DARK MODE
+==================================================== */
+body.dark-mode {
+    --primary-color: #3498db;
+    --primary-hover-color: #3498db;
+    --secondary-color: #ecf0f1;
+
+    --bg-color: #121212;
+    --bg-secondary: #1a1a1a;
+    --card-bg: #1e1e1e;
+
+    --text-color: #ffffff;
+    --text-secondary: #b0b0b0;
+
+    --border-color: #2d2d2d;
+    --footer-bg: #0a0a0a;
+
+    --hero-gradient: linear-gradient(135deg, #1a5276, #121212);
+
+    --shadow: 0 5px 15px rgba(0,0,0,0.2);
+    --shadow-hover: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* ====================================================
+   RESET
+==================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--bg-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* ====================================================
+   UTILITIES
+==================================================== */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
