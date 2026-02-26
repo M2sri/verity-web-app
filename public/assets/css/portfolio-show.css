@@ -1,0 +1,132 @@
+/* MAIN WRAPPER */
+.case-wrapper {
+    padding: 80px 0;
+}
+
+/* BREADCRUMB */
+.case-breadcrumb {
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.case-breadcrumb a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.case-breadcrumb .current {
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+/* LAYOUT */
+.case-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr; /* image now bigger */
+    gap: 60px;
+    align-items: center; /* vertically align */
+}
+
+.case-content {
+    max-width: 650px;
+}
+
+
+.case-content h2 {
+    margin-bottom: 20px;
+}
+
+.case-content h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.case-content p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* IMAGE */
+.case-image img {
+    width: 100%;
+    height: 100%;
+    max-height: 600px; /* increase height */
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: var(--shadow-hover);
+}
+
+
+/* BOTTOM SECTION */
+.case-bottom {
+    margin-top: 80px;
+    padding-top: 40px;
+    border-top: 1px solid var(--border-color);
+}
+
+.bottom-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-category {
+    display: inline-block;
+    padding: 6px 18px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.short-desc {
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 10px auto 0;
+}
+
+.bottom-grid {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.bottom-grid small {
+    display: block;
+    color: var(--text-secondary);
+    margin-bottom: 5px;
+}
+
+/* TECHNOLOGIES */
+.tech-tags {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tech-tags span {
+    background: var(--bg-secondary);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .case-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .case-image {
+        order: -1;
+    }
+
+    .bottom-grid {
+        gap: 30px;
+    }
+}

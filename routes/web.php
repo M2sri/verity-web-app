@@ -5,6 +5,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\JobController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PortfolioController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +21,12 @@ Route::post('/jobs/apply', [JobController::class, 'store'])->name('jobs.store');
 Route::get('/', function () {
     return view('pages.home');
 })->name('pages.home');
+
+
+// routes/web.php
+
+Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio.index');
+Route::get('/portfolio/{slug}', [PortfolioController::class, 'show'])->name('portfolio.show');
 
 
 /*

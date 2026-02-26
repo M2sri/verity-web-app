@@ -1,7 +1,6 @@
 <section id="about" class="section">
     <h2>About Verity</h2>
-    <p class="lead">Honesty, clarity, and reliability in digital solutions.</p>
-    
+    <p class="section-intro">Honesty, clarity, and reliability in digital solutions.</p>
     <div class="about-grid">
         <div class="service-card">
             <h3>Our Story</h3>

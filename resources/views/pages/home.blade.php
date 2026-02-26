@@ -10,6 +10,7 @@
             @include('sections.about')
             @include('sections.services')
             @include('sections.subscriptions')
+            @include('sections.faq')
             @include('sections.projects')
             @include('sections.team')
             @include('sections.contact')

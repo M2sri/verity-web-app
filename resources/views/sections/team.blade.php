@@ -1,6 +1,6 @@
-<section id="team" class="section team-section">
+<section id="team" class="section">
     <h2>Meet Our Team</h2>
-    
+    <p class="section-intro">We are more than just a team | we are a community united by shared values and a commitment to excellence. </p>
     <div class="swiper team-swiper">
         <div class="swiper-wrapper" id="team-wrapper"></div>
         

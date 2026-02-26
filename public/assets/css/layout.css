@@ -8,6 +8,7 @@ header {
     z-index: 1000;
     background: var(--card-bg);
     border-bottom: 1px solid var(--border-color);
+     scroll-margin-top: 50px;
 }
 
 
@@ -71,12 +72,15 @@ nav a.active::after {
    FOOTER BASE
 =============================== */
 .footer-modern {
-    background: var(--footer-bg);
+    background: var(--bg);
     color: var(--text-secondary);
     padding: 70px 0 30px;
     border-top: 1px solid var(--border-color);
     font-family: 'Inter', system-ui, sans-serif;
+    position: relative;
+    transition: background 0.3s ease, color 0.3s ease;
 }
+
 
 .footer-modern .container {
     max-width: 1300px;

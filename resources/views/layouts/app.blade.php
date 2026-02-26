@@ -19,8 +19,11 @@
      <link rel="stylesheet" href="{{ asset('assets/css/hero.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/components.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/projects.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/portfolio.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/portfolio-show.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/sections.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/subscriptions.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/faq.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/application-view.css') }}">
 
@@ -36,7 +39,7 @@
     <div class="container">
         <div class="header-content">
             <div class="header-logo">
-                <a href="#">
+                <a href="{{ route('pages.home') }}#home">
                     <img src="{{ asset('assets/Logo Final-01.png') }}" alt="VERITY IT Solutions Logo">
                 </a>
             </div>
@@ -45,17 +48,18 @@
                 <i class="fas fa-bars"></i>
             </button>
 
-            <nav id="mobileNav">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#pricing">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#team">Our Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="{{ route('careers') }}">Join Us</a></li>
-                </ul>
-            </nav>
+                <nav id="mobileNav">
+                    <ul>
+                        <li><a href="{{ route('pages.home') }}#home">Home</a></li>
+                        <li><a href="{{ route('pages.home') }}#about">About</a></li>
+                        <li><a href="{{ route('pages.home') }}#pricing">Services</a></li>
+                        <li><a href="{{ route('pages.home') }}#projects">Projects</a></li>
+                        <li><a href="{{ route('pages.home') }}#team">Our Team</a></li>
+                        <li><a href="{{ route('pages.home') }}#contact">Contact</a></li>
+                        <li><a href="{{ route('careers') }}">Join Us</a></li>
+                    </ul>
+                </nav>
+
 
 <div class="theme-switcher">
     <button class="btn btn-icon" id="themeToggle" aria-label="Toggle dark mode">
@@ -81,9 +85,12 @@
 @endif
     
     <script src="{{ asset('assets/js/app.js') }}"></script>
-    <script src="{{ asset('assets/js/services.js') }}"></script>
-    <script src="{{ asset('assets/js/projects.js') }}"></script>
-    <script src="{{ asset('assets/js/team.js') }}"></script>
+        <script src="{{ asset('assets/js/services.js') }}"></script>
+            <script src="{{ asset('assets/js/faq.js') }}"></script>
+                <script src="{{ asset('assets/js/projects.js') }}"></script>
+                    <script src="{{ asset('assets/js/portfolio.js') }}"></script>
+                        <script src="{{ asset('assets/js/portfolio-show.js') }}"></script>
+                                <script src="{{ asset('assets/js/team.js') }}"></script>
 
 
     @stack('scripts')

@@ -90,3 +90,4 @@ Thank you!`;
 };
 
 document.addEventListener("DOMContentLoaded", () => pricingModule.init());
+
